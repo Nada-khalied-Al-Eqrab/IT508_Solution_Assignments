@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <style>
+        /* تنسيق عام الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+        }
+
+        /* تنسيق كلمة FEEDBACK */
+        h1 {
+            color: darkred;
+            text-transform: uppercase;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* حاوية النموذج لتوسيط العناصر */
+        form {
+            display: grid;
+            grid-template-columns: 180px 1fr; /* عمود للعنوان وعمود للمدخلات */
+            gap: 10px;
+            width: 500px;
+        }
+
+        label {
+            font-weight: normal;
+        }
+
+        /* تنسيق حقول الإدخال */
+        input[type="text"], 
+        select, 
+        textarea {
+            width: 100%;
+            border: 1px solid #777;
+            padding: 2px;
+        }
+
+        /* تنسيق الراديو والتشيك بوكس ليكونوا بجانب النص */
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* تنسيق الأزرار في الأسفل */
+        .button-container {
+            grid-column: 2; /* وضع الأزرار في العمود الثاني */
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 5px 15px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn { background-color: darkgreen; }
+        .reset-btn { background-color: darkgreen; }
+
+        /* تعديل حجم القائمة المتعددة */
+        select[multiple] {
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Name: Nada Khaled Said Ibrahim - ندى خالد سعيد ابراهيم
+        ST.Code: 202400208
+        Diploma: Computer Science 
+        Date : 29/4/2026
+    -->
+    <h1>FEEDBACK</h1>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Email address:</label>
+        <input type="text" name="email">
+
+        <label>Are you a club member:</label>
+        <div>
+            <input type="checkbox" checked>
+        </div>
+
+        <label>Your age:</label>
+        <div class="radio-group">
+            <div class="radio-item"><input type="radio" name="age"> <= 20</div>
+            <div class="radio-item"><input type="radio" name="age" checked> 21-30</div>
+            <div class="radio-item"><input type="radio" name="age"> 31-40</div>
+            <div class="radio-item"><input type="radio" name="age"> > 40</div>
+        </div>
+
+        <label>Your state:</label>
+        <select>
+            <option>Western Australia</option>
+            <option>New South Wales</option>
+            <option>Victoria</option>
+        </select>
+
+        <label>How did you<br>find our site:</label>
+        <select multiple>
+            <option selected>Web Search</option>
+            <option>Link on another site</option>
+            <option>Told about it</option>
+        </select>
+
+        <label>Site suggestions:</label>
+        <textarea rows="3">Type your suggestion here</textarea>
+
+        <label>Other comments:</label>
+        <textarea rows="3">Additional comments here</textarea>
+
+        <div class="button-container">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+
+</body>
+</html>

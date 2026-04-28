@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تطبيق الجدول - Assignment 2</title>
+    <style>
+        /* التنسيقات العامة */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* تنسيق العنوان الرئيسي */
+        .main-title {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* تنسيق الجدول */
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            border: 1px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        /* الخلية البنفسجية على اليسار */
+        .sidebar {
+            background-color: purple;
+            color: black;
+            width: 25%;
+            font-size: 14px;
+        }
+
+        /* الصف الأزرق (Header) */
+        .header-cell {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* تنسيق الروابط والصور المفقودة */
+        .link-cell {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .img-placeholder {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        /* تنسيق النصوص الطويلة */
+        .content-text {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Name: Nada Khaled Said Ibrahim - ندى خالد سعيد ابراهيم
+        ST.Code: 202400208
+        Diploma: Computer Science 
+        Date : 29/4/2026
+    -->
+
+    <div style="width: 100%;">
+        <div class="main-title">Text Over an Image</div>
+        
+        <table>
+            <tr>
+                <td>Normal cell</td>
+                <td colspan="2" class="header-cell">Today's weather forcats</td>
+                <td>Normal cell</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" class="sidebar">
+                    Tables in HTML are intended to be used in much the same way that you'd<br>
+                    use a table in a word-processor i.e. to layout text or graphics in an organised tabular format in your HTML document.
+                </td>
+                <td style="width: 20px;"><img src="id.jpg" alt="" class="img-placeholder"  width="100px" height="100px"></td>
+                <td class="link-cell">Go to Css section</td>
+                <td>Normal cell</td>
+            </tr>
+
+            <tr>
+                <td style="width: 20px;"><img src="html.jpg" alt="" class="img-placeholder" width="100px" height="100px"></td>
+                <td colspan="2" class="content-text">
+                    <strong>Welcome to the wonderful world of the Web and HTML.</strong><br>
+                    With just a little bit of knowledge, some practice, and something to say, you can either build your own little 
+                    piece of cyberspace or expand on work you've already done. This book is your down-and-dirty guide to 
+                    putting together your first Web page, sprucing up an existing Web page, or creating complex and exciting 
+                    pages that integrate intricate designs, multimedia, and scripting. The best way to start working with HTML 
+                    is to jump right in, so that's what this chapter does: It brings you up to speed on the basics of how HTML 
+                    works behind the scenes of Web pages, introducing you to HTML's building blocks. When you're done with 
+                    this chapter, you'll know how HTML works so you can start creating Web pages right away columns
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 20px;"><img src="css.jpg" alt="" class="img-placeholder" width="100px" height="100px"></td>
+                <td colspan="2" class="content-text">
+                    <strong>What you can do with CSS</strong> You have a healthy collection of properties to work with as you write your 
+                    style rules. You can control just about every aspect of a page's display — from borders to font sizes and 
+                    everything in between: □ Background properties control the background colors associated with blocks of 
+                    text and with images. You can also use these properties to attach background colors to your page or to 
+                    individual elements. □ Border properties control borders associated with the page, lists, tables, images, and 
+                    block elements (such as paragraphs). You can specify border width, color, style, and distance from the 
+                    element's content. □ Classification properties control how elements such as images flow on the page 
+                    relative to other elements. You can use these properties to integrate images and tables with the text on your 
+                    page. □ List properties control how lists appear on your page, such as • Managing list markers • Using 
+                    images in place of bullets
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
